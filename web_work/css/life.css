@@ -1,0 +1,209 @@
+/* 日志部分开始 */
+.journal {
+    width: 1000px;
+    margin: 30px auto;
+    border-radius: 30px;
+    background-color: rgba(250, 250, 250, .3);
+}
+
+
+/*文本框*/
+.journal input[type=text] {
+    width: 850px;
+    height: 25px;
+    background-color: rgba(250, 250, 250, .6);
+}
+
+.journal1,
+.journal2,
+.journal3 {
+    position: relative;
+    width: 980px;
+    height: 400px;
+    margin: 10px auto;
+    /*四周的外边距为 10 像素,水平方向上实现居中对齐*/
+    border-bottom: 1px solid #666;
+    /*底部边框*/
+}
+
+
+/*图标*/
+.journal span {
+    font-size: 25px;
+}
+
+/* 日志1开始 */
+
+/*头像*/
+.journal1 .fabiao1 .fb-t1 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.journal1 .fabiao1 .fb-t1 img {
+    width: 100%;
+    height: 100%;
+}
+
+/*名字日期*/
+.journal1 .fabiao1 .fb-n1 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 35px;
+}
+
+/*文案照片*/
+.journal1 .fb-p1 {
+    position: absolute;
+    top: 75px;
+    left: 85px;
+    width: 521px;
+}
+
+.journal1 .fb-p1 h3 {
+    height: 30px;
+    line-height: 30px;
+}
+
+.journal1 .fb-p1 img {
+    width: 521px;
+    height: 250px;
+    padding-right: 2px;
+}
+
+.journal1 .fb-c1 {
+    position: absolute;
+    top: 366px;
+    left: 15px;
+    width: 980px;
+    height: 25px;
+}
+
+.journal1 .fb-c1 .fas1 {
+    width: 35px;
+    height: 25px;
+}
+
+/* 日志1结束 */
+
+
+/* 日志2开始 */
+
+.journal2 .fabiao2 .fb-t2 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 30px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.journal2 .fabiao2 .fb-t2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.journal2 .fabiao2 .fb-n2 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.journal2 .fb-p2 {
+    position: absolute;
+    top: 62px;
+    left: 85px;
+    width: 500px;
+}
+
+.journal2 .fb-p2 h3 {
+    height: 30px;
+    line-height: 30px;
+}
+
+.journal2 .fb-p2 img {
+    width: 521px;
+    height: 250px;
+    padding-right: 2px;
+}
+
+.journal2 .fb-c2 {
+    position: absolute;
+    top: 355px;
+    left: 15px;
+    width: 980px;
+    height: 25px;
+}
+
+.journal2 .fb-c2 .fas2 {
+    width: 35px;
+    height: 25px;
+}
+
+
+/* 日志2结束 */
+/* 日志3开始 */
+
+.journal3 .fabiao3 .fb-t3 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 30px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.journal3 .fabiao3 .fb-t3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.journal3 .fabiao3 .fb-n3 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.journal3 .fb-p3 {
+    position: absolute;
+    top: 62px;
+    left: 85px;
+    width: 600px;
+}
+
+.journal3 .fb-p3 h3 {
+    height: 30px;
+    line-height: 30px;
+}
+
+.journal3 .fb-p3 img {
+    width: 195px;
+    padding-right: 2px;
+}
+
+.journal3 .fb-c3 {
+    position: absolute;
+    top: 355px;
+    left: 15px;
+    width: 980px;
+    height: 25px;
+}
+
+.journal3 .fb-c3 .fas3 {
+    width: 35px;
+    height: 25px;
+}
+
+.kb {
+    height: 30px;
+}
+
+/* 日志3结束 */
+/* 日志部分结束 */

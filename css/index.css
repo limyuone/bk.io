@@ -1,29 +1,25 @@
-/* main区域开始 */
 /* 自我介绍部分开始 */
 .intro {
     position: relative;
     width: 1000px;
-    height: 400px;
+    height: 800px;
     margin: 90px auto 0px auto;
+    /*上边距设为 90px*/
     border-radius: 30px;
     background-color: rgba(250, 250, 250, .3);
 }
- 
-/* .clrd {
-    background-color: rgba(250, 250, 250, .3);
-}
 
-.clrn {
-    background-color: rgba(0, 0, 0, .3);
-} */
 .intro .sh {
     background-color: rgba(0, 0, 0, .3);
+    /* 设置.intro 下的 .sh 元素的背景颜色为黑色半透明 */
     width: 1000px;
     height: 100px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    /* 设置该元素的左上角和右上角为 30px 的圆角 */
 }
 
+/*头像*/
 .intro .sh .my {
     position: absolute;
     top: 20px;
@@ -50,11 +46,9 @@
     top: 50px;
     left: 260px;
     height: 100px;
-    /* width: 200px; */
 }
 
 .intro .sh .mname h3 {
-    /* display: inline-block; */
     font-size: 40px;
     height: 50px;
     line-height: 50px;
@@ -63,7 +57,6 @@
 }
 
 .intro .sh .mname h4 {
-    /* display: inline-block; */
     font-size: 25px;
     height: 56px;
     line-height: 56px;
@@ -72,15 +65,16 @@
 
 .intro h5 {
     font-size: 20px;
-    height: 40px;
     line-height: 40px;
     padding-left: 15px;
 }
 
+/*分隔符*/
 .intro .shuxian {
     color: #666;
 }
 
+/*点赞*/
 .intro .sh .dianzan {
     position: absolute;
     top: 55px;
@@ -89,13 +83,13 @@
     height: 30px;
     font-size: 30px;
     font-weight: 700;
-    cursor: default;
 }
 
 .intro .xia {
     position: absolute;
     top: 240px;
     left: 80px;
+    width: 100%;
 }
 
 .intro .xia h5 {
@@ -103,249 +97,68 @@
     line-height: 50px;
 }
 
+.kb {
+    height: 30px;
+}
+
 /* 自我介绍部分结束 */
-/* 日志部分开始 */
-.journal {
-    width: 1000px;
-    margin: 30px auto;
-    border-radius: 30px;
-    background-color: rgba(250, 250, 250, .3);
+.player {
+    margin-top: 50px;
+    height: 350px;
+    width: 800px;
+    background-color: rgba(216, 218, 221, 0.5);
+    border-radius: 10px;
 }
 
-.journal input[type=text] {
-    width: 850px;
-    height: 25px;
-    background-color: rgba(250, 250, 250, .6);
-}
-
-.journal1,
-.journal2,
-.journal3 {
-    position: relative;
-    width: 980px;
-    height: 400px;
-    margin: 10px auto;
-    border-bottom: 1px solid #666;
-}
-
-.journal  span {
-    font-size: 25px;
-}
-
-.journal .aix1,
-.journal .aix2,
-.journal .aix3 {
-    color: #000;
-    font-size: 25px;
-    cursor: default;
-}
-
-/* 日志1开始 */
-.journal1 {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
-
-.journal1 .fabiao1 {
-    width: 980px;
-    height: 50px;
-    /* background-color: aqua; */
-    margin-top: 10px;
-}
-
-.journal1 .fabiao1 .fb-t1 {
-    float: left;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+.player .cover {
+    display: inline-block;
+    height: 250px;
+    width: 250px;
     margin-left: 30px;
     margin-top: 30px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
-.journal1 .fabiao1 .fb-t1 img {
-    width: 100%;
-    height: 100%;
-}
-
-.journal1 .fabiao1 .fb-n1 {
-    float: left;
-    margin-left: 10px;
-    margin-top: 35px;
-}
-
-.journal1 .fb-p1 {
+.song {
     position: absolute;
-    top: 75px;
-    left: 85px;
-    width: 521px;
-
-}
-
-.journal1 .fb-p1 h3 {
-    height: 30px;
-    line-height: 30px;
-
-}
-
-.journal1 .fb-p1 img {
-    width: 521px;
-    padding-right: 2px;
-
-}
-
-.journal1 .fb-c1 {
-    position: absolute;
-    top: 366px;
-    left: 15px;
-    width: 980px;
-    height: 25px;
-}
-
-.journal1 .fb-c1 .fas1 {
-    width: 35px;
-    height: 25px;
-}
-
-
-
-
-/* 日志1结束 */
-/* 日志2开始 */
-.journal2 .fabiao2 {
-    width: 980px;
-    height: 50px;
-    /* background-color: aqua; */
-    margin-top: 10px;
-}
-
-.journal2 .fabiao2 .fb-t2 {
-    float: left;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    margin-left: 30px;
-    margin-top: 15px;
-    overflow: hidden;
-}
-
-.journal2 .fabiao2 .fb-t2 img {
-    width: 100%;
-    height: 100%;
-}
-
-.journal2 .fabiao2 .fb-n2 {
-    float: left;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-top: 20px;
+    left: 250px;
+    top: 150px;
+    height: 250px;
+    width: 400px;
+    overflow: auto;
 }
 
-.journal2 .fb-p2 {
-    position: absolute;
-    top: 62px;
-    left: 85px;
-    width: 500px;
+div::-webkit-scrollbar {
+    display: none;
 }
 
-.journal2 .fb-p2 h3 {
-    height: 30px;
-    line-height: 30px;
+.song p {
+    font-family: "楷体";
+    margin: 5px;
 }
 
-.journal2 .fb-p2 video {
-    width: 460px;
-    padding-right: 2px;
+.song h2 {
+    font-family: "楷体";
 }
 
-.journal2 .fb-c2 {
-    position: absolute;
-    top: 355px;
-    left: 15px;
-    width: 980px;
-    height: 25px;
-}
-
-/* .journal2 .fb-c2 .liuyan2 {
-    width: 850px;
-    height: 25px;
-} */
-.journal2 .fb-c2 .fas2 {
-    width: 35px;
-    height: 25px;
-}
-
-
-/* 日志2结束 */
-/* 日志3开始 */
-.journal3 {
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-
-.journal3 .fabiao3 {
-    width: 980px;
-    height: 50px;
-    /* background-color: aqua; */
-    margin-top: 10px;
-}
-
-.journal3 .fabiao3 .fb-t3 {
-    float: left;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    margin-left: 30px;
-    margin-top: 15px;
-    overflow: hidden;
-}
-
-.journal3 .fabiao3 .fb-t3 img {
+audio {
     width: 100%;
-    height: 100%;
+    height: 50px;
+    border-radius: 10px;
 }
 
-.journal3 .fabiao3 .fb-n3 {
-    float: left;
-    margin-left: 10px;
-    margin-top: 20px;
+audio::-webkit-media-controls-progress-bar {
+    background-color: #000;
 }
 
-.journal3 .fb-p3 {
-    position: absolute;
-    top: 62px;
-    left: 85px;
-    width: 600px;
+.player {
+    /* background: linear-gradient(to bottom, #304352, #d7d2cc); */
+    background-color: rgba(238, 238, 238, 0.2);
 }
 
-.journal3 .fb-p3 h3 {
-    height: 30px;
-    line-height: 30px;
+audio::-webkit-media-controls-enclosure {
+    background-color: rgba(216, 218, 221, 0.0);
 }
-
-.journal3 .fb-p3 img {
-    width: 195px;
-    padding-right: 2px;
-}
-
-.journal3 .fb-c3 {
-    position: absolute;
-    top: 355px;
-    left: 15px;
-    width: 980px;
-    height: 25px;
-}
-
-/* .journal3 .fb-c3 .liuyan3 {
-    width: 850px;
-    height: 25px;
-} */
-.journal3 .fb-c3 .fas3 {
-    width: 35px;
-    height: 25px;
-}
-
-
-
-/* 日志3结束 */
-/* 日志部分结束 */
-/* mian区域结束 */

@@ -19,12 +19,10 @@
     font-family: "iconfont";
     font-size: 16px;
     font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    background: url(../images/1.jpg) no-repeat fixed center top;
+    background: url(../images/bj4.jpg) no-repeat fixed center top;
     background-size: 100% 100%;
 }
 
@@ -34,52 +32,37 @@ html {
 
 a {
     text-decoration: none;
+    /*去掉链接的下划线*/
 }
 
 li {
     list-style: none;
-}
-
-.clearfix::before,
-.clearfix::after {
-    /* 在父级盒子前后都插入两个盒子 */
-    content: "";
-    display: block;
-    /* 默认为行内元素 */
-}
-
-.clearfix::after {
-    clear: both;
-}
-
-.clearfix {
-    /* ie6、7专有 */
-    *zoom: 1;
+    /*去掉无序列表的那个点*/
 }
 
 /* header部分开始 */
 .header {
     width: 100%;
     z-index: 1;
+    /*页面最上面*/
     position: fixed;
+    /*不随页面的滚动而滚动*/
     top: 0;
     left: 0;
-    /* left: calc(50% - 750px); */
     height: 60px;
-    /* background-color: #fff; */
     background-image: linear-gradient(to bottom, rgba(250, 250, 250, .1), rgba(0, 0, 0, .3));
+    /*渐变*/
 }
 
 .header .h-zj {
     margin: 0 auto;
     height: 60px;
-    width: 1500px;
-    /* border-radius: 10px; */
-
+    width: 100%;
 }
 
 .header .h-zj .lef {
     float: left;
+    width: 250px;
     height: 60px;
     line-height: 60px;
     font-size: 25px;
@@ -87,63 +70,65 @@ li {
     padding-left: 30px;
 }
 
-.nav {
+.ali {
     float: left;
     height: 60px;
-    padding-left: 10px;
-    margin-left: 10px;
-}
-
-.nav ul {
-    float: left;
-    height: 60px;
-}
-
-.nav ul li {
-    float: left;
-    /* width: 50px; */
-    height: 60px;
-    padding: 0 60px;
     line-height: 60px;
-    font-weight: 700;
-    font-size: 18px;
+    padding-left: 10px;
     text-align: center;
 }
 
 .nav ul li a {
+    display: inline-block;
     height: 60px;
+    width: 150px;
     color: black;
+    height: 60px;
     line-height: 60px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
-    text-align: center;
+    font-family: "华文新魏";
     padding: 0 35px;
 }
 
-.nav ul li:hover {
+.xiala {
+    display: none;
+}
+
+/* 鼠标移到更多 */
+#gegnduo:hover .xiala {
+    display: block;
+}
+
+.nav ul li a:hover {
     background-color: rgba(250, 250, 250, .2);
     border-bottom: 1px solid rgba(250, 250, 250, .3);
+    /*用于设置元素底部边框样式*/
     box-shadow: 0px 4px 3px 0px #fff;
+    /*添加阴影效果*/
 }
 
 .nav ul li:hover a {
     color: #fff;
 }
 
+/*头像*/
 .header .h-zj .tx {
     float: left;
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    margin-left: 70px;
     margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 8px;
     overflow: hidden;
-    transition: all .4s;
 }
 
 .header .h-zj .tx:hover {
     box-shadow: 0px 0px 5px 4px rgba(250, 250, 250, .3);
+    /* 当鼠标悬停时，设置该元素的阴影效果 */
     transform: scale(1.1);
+    /* 当鼠标悬停时，设置该元素缩放比例为原来的1.1倍 */
 }
 
 .header .h-zj .tx img {
@@ -153,64 +138,19 @@ li {
 
 .header .h-zj .rit {
     float: left;
-    height: 60px;
-    line-height: 60px;
     font-size: 16px;
-    padding-left: 10px;
-}
-
-.header .h-zj .shezhi {
-    float: left;
-    text-align: center;
-    width: 105px;
     height: 60px;
     line-height: 60px;
-    font-size: 30px;
-    /* padding-left: 20px; */
-}
-
-.header .h-zj .shezhi:hover .sz-l {
-    display: block;
-}
-
-.header .h-zj .shezhi .sz-l {
-    height: 100px;
-    width: 105px;
-    background: linear-gradient(to top, rgba(250, 250, 250, .1), rgba(0, 0, 0, .3));
-    display: none;
-}
-
-.header .h-zj .shezhi .sz-l li {
-    float: left;
-    width: 35px;
-    height: 50px;
-    border-bottom: 1px solid #666;
-    font-size: 25px;
-}
-
-.header .h-zj .shezhi .sz-l li:hover {
-    background-color: rgba(250, 250, 250, .2);
-    border-bottom: 1px solid rgba(250, 250, 250, .3);
-    box-shadow: 0px 4px 3px 0px #fff;
-}
-
-.header .h-zj .shezhi .sz-l li a {
-    color: #000;
-    font-size: 25px;
-}
-
-.header .h-zj .shezhi .sz-l li:hover a {
-    color: #fff;
+    margin-right: 100px;
 }
 
 /* header部分结束 */
+
+
 /* footer区域开始 */
 .footer {
-    /* width: 1500px; */
     height: 200px;
     background-color: rgba(250, 250, 250, .6);
-    margin: 5px auto;
-    /* border-radius: 20px; */
 }
 
 .footer .f-zj {
@@ -231,16 +171,9 @@ li {
     color: #777;
 }
 
+/*分隔符*/
 .footer .f-zj h4 span {
     color: #d8d8d8;
-}
-
-.footer .f-zj h3 {
-    text-align: center;
-    color: #666;
-    height: 35px;
-    line-height: 35px;
-    font-size: 20px;
 }
 
 /* footer区域结束 */
